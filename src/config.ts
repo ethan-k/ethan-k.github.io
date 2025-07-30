@@ -1,0 +1,146 @@
+export const siteConfig = {
+  name: "Eunseok Kang",
+  title: "Full-Stack Software Engineer (Tech Lead)",
+  description:
+    "Versatile and results-driven full‑stack engineer and tech lead with 10+ years of experience building scalable, production-grade systems.",
+  accentColor: "#667eea",
+  social: {
+    email: "ethan.es.kang@gmail.com",
+    linkedin: "https://www.linkedin.com/in/eunseokkang",
+    github: "https://github.com/ethan-k",
+  },
+  aboutMe:
+    "Versatile and results-driven full-stack engineer and tech lead with over 10 years of experience building scalable, production-grade systems. Proven ability to ship quickly in fast-moving environments, with deep expertise in backend (Java, Go, Kotlin) and frontend (React, TypeScript) development. Strong track record in leading teams, designing distributed architectures, and optimising CI/CD pipelines.",
+  skills: [
+    // Languages
+    "Java",
+    "Kotlin",
+    "Go",
+    "Python",
+    "TypeScript",
+    "JavaScript",
+    "PHP",
+    // Frameworks & Libraries
+    "Spring Boot",
+    "gRPC",
+    "React",
+    "Next.js",
+    // Data & Messaging
+    "MySQL",
+    "Kafka",
+    "Redis",
+    "RabbitMQ",
+    "AWS SQS/SNS",
+    "Apache Airflow",
+    "Snowflake",
+    // Cloud & DevOps
+    "AWS",
+    "Kubernetes",
+    "Docker",
+    "Terraform",
+    "Helm",
+    "GitHub Actions",
+    "GitLab CI",
+    "Jenkins",
+  ],
+  // No explicit projects in the resume; hide the section by leaving empty
+  projects: [],
+  experience: [
+    {
+      company: "Banksalad",
+      title: "Senior Software Engineer (Tech Lead)",
+      dateRange: "May 2022 - Present",
+      bullets: [
+        "Cut external data-provider API costs by 20% via multi-layer logical + physical caching",
+        "Raised connection success by 20% by leading the MyData 2.0 architecture redesign",
+        "Boosted system resilience by leading transition from synchronous to asynchronous data sync",
+        "Led migration initiatives from on-premises to cloud infrastructure using AWS and Kubernetes",
+        "Led a 3-person engineering team, mentoring junior engineers; introduced Agile and mob programming",
+        "Built large-scale Go microservices on a MySQL database exceeding 4 TB",
+        "Designed/Implemented data sync systems with Go, gRPC, MySQL, AWS SQS/SNS, Kafka, and Redis",
+        "Developed electronic wallet apps for remittance using Spring, MySQL, RabbitMQ, Redis",
+        "Built a B2B API system with Spring (Kotlin), MySQL, AWS SQS, and Redis",
+        "Designed and built CI/CD pipelines and batch processing systems using Spring Batch, Go, MySQL, Helm, and GitHub Actions",
+      ],
+    },
+    {
+      company: "Raisin",
+      title: "Senior Software Engineer (Freelance)",
+      dateRange: "Jan 2021 - May 2022",
+      bullets: [
+        "Designed and implemented a company-wide Keycloak authentication solution supporting SSO, RBAC, and advanced login flows (legal representative, power of attorney)",
+        "Optimized CI pipeline of a Java application on GitLab CI/CD by 40% by reversing from multi-module to single",
+        "Designed and implemented OTP authentication integrating Spring, Kafka, and Twilio",
+        "Created data synchronization between customer data and Zendesk using Spring and Kafka",
+        "Developed UI features using React (TypeScript), jQuery, and FreeMarker",
+        "Built a deposit order integration system using AWS Lambda (Python), Kafka, and S3",
+        "Designed data migration batch applications with Apache Airflow, Python, and SQLAlchemy",
+        "Migrated on-prem Java applications to AWS Cloud and Kubernetes",
+        "Built a CLI tool for internal version management using Python",
+        "Developed infra provisioning on AWS with Terraform and GitLab CI/CD",
+        "Developed end-to-end tests and automation pipelines using GitLab CI/CD, Docker, and Cypress",
+      ],
+    },
+    {
+      company: "Facebook",
+      title: "Software Engineer in Test Infra and Reliability (Contract)",
+      dateRange: "Oct 2019 - Dec 2020",
+      bullets: [
+        "Developed automated test failure analysis systems to improve debugging efficiency",
+        "Established pipelines for test automation and result analysis, increasing testing velocity",
+        "Enhanced internal E2E testing framework: frontend (Jest, TypeScript, React); backend (Hack, Python)",
+        "Formulated comprehensive test plans for internal applications",
+        "Guided development teams in adopting E2E test automation practices",
+      ],
+    },
+    {
+      company: "Gojek",
+      title: "Software Engineer in Financial Department",
+      dateRange: "Nov 2018 - Oct 2019",
+      bullets: [
+        "Developed a financial platform using Spring (Java), Go, React (TypeScript), PostgreSQL, and BigQuery",
+        "Designed and implemented distributed systems with microservice architecture",
+        "Established CI/CD pipelines using Helm, Terraform, and GitLab CI for AWS and Kubernetes deployments",
+        "Developed high-throughput data distribution system using Kafka and Go",
+        "Implemented logging and monitoring using ELK stack, Datadog, and Sentry",
+      ],
+    },
+    {
+      company: "Rakuten",
+      title: "Software Engineer in Travel Department",
+      dateRange: "Apr 2017 - Sep 2018",
+      bullets: [
+        "Developed travel itinerary system for Japan's second-largest travel booking platform using Spring (Java), MongoDB, PostgreSQL, Cloud Foundry",
+        "Established CI/CD pipeline using Jenkins, Ansible, and shell scripts",
+        "Created test data comparison application using React to enhance QA processes",
+        "Engineered data communication between the itinerary system and vendor platforms",
+      ],
+    },
+    {
+      company: "Inspace",
+      title: "Software Engineer",
+      dateRange: "Mar 2016 - Feb 2017",
+      bullets: [
+        "Improved initial loading speed of a Cordova-based hybrid application",
+        "Developed satellite image monitoring system with ASP.NET MVC 4 (C#), WPF, Python, SQL Server",
+        "Developed a radiation calculation system with Spring (Java), MySQL",
+      ],
+    },
+    {
+      company: "KISG",
+      title: "Founder / Fullstack Software Engineer",
+      dateRange: "Mar 2015 - Feb 2016",
+      bullets: [
+        "Developed event-booking application using Laravel (PHP), TypeScript, React, and Redux",
+        "Created cross-platform mobile app for Android/iOS using React Native",
+      ],
+    },
+  ],
+  education: [
+    {
+      school: "KOREATECH",
+      degree: "Bachelor of Science in Computer Engineering",
+      dateRange: "Graduated",
+    },
+  ],
+};

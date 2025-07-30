@@ -1,0 +1,27 @@
+{
+  "name": "eunseok-kang-portfolio",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Portfolio website of Eunseok Kang - Senior Software Engineer",
+  "author": "Eunseok Kang <ethan.es.kang@gmail.com>",
+  "homepage": "https://ethan-k.github.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ethan-k/ethan-k.github.io.git"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "astro": "^5.12.3",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}

@@ -1,0 +1,84 @@
+---
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import Projects from "../components/Projects.astro";
+import Experience from "../components/Experience.astro";
+import Education from "../components/Education.astro";
+import Footer from "../components/Footer.astro";
+import { siteConfig } from "../config";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={siteConfig.description} />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content={siteConfig.accentColor} />
+    <link rel="canonical" href="https://ethan-k.github.io/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteConfig.name} />
+    <meta property="og:title" content={`${siteConfig.name} - ${siteConfig.title}`} />
+    <meta property="og:description" content={siteConfig.description} />
+    <meta property="og:url" content="https://ethan-k.github.io/" />
+    <meta property="og:image" content="/favicon.svg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={`${siteConfig.name} - ${siteConfig.title}`} />
+    <meta name="twitter:description" content={siteConfig.description} />
+    <meta name="twitter:image" content="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>{siteConfig.name} - {siteConfig.title}</title>
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Person',
+          name: siteConfig.name,
+          jobTitle: siteConfig.title,
+          url: 'https://ethan-k.github.io/',
+          email: siteConfig.social?.email ? `mailto:${siteConfig.social.email}` : undefined,
+          sameAs: [
+            siteConfig.social?.linkedin,
+            siteConfig.social?.github,
+          ].filter(Boolean),
+        })
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: `${siteConfig.name} - ${siteConfig.title}`,
+          url: 'https://ethan-k.github.io/',
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <Header />
+    <section>
+      <Hero />
+      <About />
+      <Projects />
+      <Experience />
+      <Education />
+    </section>
+    <Footer />
+  </body>
+</html>
