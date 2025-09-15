@@ -43,30 +43,37 @@ export const siteConfig = {
     "GitLab CI",
     "Jenkins",
   ],
-  // No explicit projects in the resume; hide the section by leaving empty
-  projects: [],
-  experience: [
+  projects: [
     {
-      company: "Banksalad",
-      title: "Senior Software Engineer (Tech Lead)",
-      dateRange: "May 2022 - Present",
-      bullets: [
-        "Cut external data-provider API costs by 20% via multi-layer logical + physical caching",
-        "Raised connection success by 20% by leading the MyData 2.0 architecture redesign",
-        "Boosted system resilience by leading transition from synchronous to asynchronous data sync",
-        "Led migration initiatives from on-premises to cloud infrastructure using AWS and Kubernetes",
-        "Led a 3-person engineering team, mentoring junior engineers; introduced Agile and mob programming",
-        "Built large-scale Go microservices on a MySQL database exceeding 4 TB",
-        "Designed/Implemented data sync systems with Go, gRPC, MySQL, AWS SQS/SNS, Kafka, and Redis",
-        "Developed electronic wallet apps for remittance using Spring, MySQL, RabbitMQ, Redis",
-        "Built a B2B API system with Spring (Kotlin), MySQL, AWS SQS, and Redis",
-        "Designed and built CI/CD pipelines and batch processing systems using Spring Batch, Go, MySQL, Helm, and GitHub Actions",
-      ],
+      name: "MyData 2.0 Architecture",
+      description: "Led architecture redesign that increased connection success by 20% and cut external API costs by 20% through multi-layer caching. Transitioned from synchronous to asynchronous data sync for improved system resilience.",
+      link: "https://www.banksalad.com",
+      skills: ["Go", "gRPC", "MySQL", "Redis", "Kafka", "AWS SQS/SNS", "Microservices"]
     },
     {
+      name: "Company-Wide Authentication System",
+      description: "Designed and implemented a comprehensive Keycloak-based authentication solution supporting SSO, role-based access control, and advanced login flows including legal representative access for minors and power of attorney scenarios.",
+      link: "https://www.raisin.com/de-de/login",
+      skills: ["Keycloak", "Java", "Spring Boot", "React", "TypeScript", "SSO", "RBAC"]
+    },
+    {
+      name: "Cloud Migration & Infrastructure",
+      description: "Led large-scale migration initiatives from on-premises to AWS Cloud and Kubernetes. Designed infrastructure provisioning with Terraform and GitLab CI/CD, streamlining deployments and improving developer productivity.",
+      link: "",
+      skills: ["AWS", "Kubernetes", "Terraform", "GitLab CI", "Docker", "Helm", "Infrastructure as Code"]
+    },
+    {
+      name: "Data Migration & Processing Platform",
+      description: "Designed and implemented data migration batch applications using Apache Airflow, Python, and SQLAlchemy. Built deposit order integration system with AWS Lambda, Kafka, and S3 for high-volume financial data processing.",
+      link: "",
+      skills: ["Apache Airflow", "Python", "SQLAlchemy", "AWS Lambda", "Kafka", "S3", "Data Engineering"]
+    }
+  ],
+  experience: [
+    {
       company: "Raisin",
-      title: "Senior Software Engineer (Freelance)",
-      dateRange: "Jan 2021 - May 2022",
+      title: "Senior Software Engineer",
+      dateRange: "Jan 2021 - Present",
       bullets: [
         "Designed and implemented a company-wide Keycloak authentication solution supporting SSO, RBAC, and advanced login flows (legal representative, power of attorney)",
         "Optimized CI pipeline of a Java application on GitLab CI/CD by 40% by reversing from multi-module to single",
@@ -79,6 +86,23 @@ export const siteConfig = {
         "Built a CLI tool for internal version management using Python",
         "Developed infra provisioning on AWS with Terraform and GitLab CI/CD",
         "Developed end-to-end tests and automation pipelines using GitLab CI/CD, Docker, and Cypress",
+      ],
+    },
+    {
+      company: "Banksalad",
+      title: "Senior Software Engineer (Tech Lead)",
+      dateRange: "May 2022 - Aug 2025",
+      bullets: [
+        "Cut external data-provider API costs by 20% via multi-layer logical + physical caching",
+        "Raised connection success by 20% by leading the MyData 2.0 architecture redesign",
+        "Boosted system resilience by leading transition from synchronous to asynchronous data sync",
+        "Led migration initiatives from on-premises to cloud infrastructure using AWS and Kubernetes",
+        "Led a 3-person engineering team, mentoring junior engineers; introduced Agile and mob programming",
+        "Built large-scale Go microservices on a MySQL database exceeding 4 TB",
+        "Designed/Implemented data sync systems with Go, gRPC, MySQL, AWS SQS/SNS, Kafka, and Redis",
+        "Developed electronic wallet apps for remittance using Spring, MySQL, RabbitMQ, Redis",
+        "Built a B2B API system with Spring (Kotlin), MySQL, AWS SQS, and Redis",
+        "Designed and built CI/CD pipelines and batch processing systems using Spring Batch, Go, MySQL, Helm, and GitHub Actions",
       ],
     },
     {
