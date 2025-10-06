@@ -19,12 +19,14 @@ export const siteConfig = {
     "Python",
     "TypeScript",
     "JavaScript",
+    "Dart",
     "PHP",
     // Frameworks & Libraries
     "Spring Boot",
     "gRPC",
     "React",
     "Next.js",
+    "Flutter",
     // Data & Messaging
     "MySQL",
     "Kafka",
@@ -67,6 +69,12 @@ export const siteConfig = {
       description: "Designed and implemented data migration batch applications using Apache Airflow, Python, and SQLAlchemy. Built deposit order integration system with AWS Lambda, Kafka, and S3 for high-volume financial data processing.",
       link: "",
       skills: ["Apache Airflow", "Python", "SQLAlchemy", "AWS Lambda", "Kafka", "S3", "Data Engineering"]
+    },
+    {
+      name: "Productivity Mobile App with Flutter",
+      description: "Built a cross-platform productivity application using Flutter and Dart. Developed with SQLite for data persistence.",
+      link: "",
+      skills: ["Flutter", "Dart", "SQLite"]
     }
   ],
   experience: [
